@@ -1,9 +1,13 @@
 .vk-header__search {
     text-align: right;
-    background: #ccc;
+    /*background: #ccc;*/
     padding: 10px;
     width: 100%;
     float: left;
+    background: url('../images/bg.jpg') center;
+}
+.vk-header__search a{
+	color: #fff;
 }
 .menu_title{
 	font-size: 16px;
@@ -130,4 +134,11 @@
 }
 .hot-line-scroll a:hover{
 	color: blue;
+}
+.top-header-mobile a{
+	float:left;
+	margin-right: 5px;
+}
+.top-header-mobile img{
+	height: 17px;
 }

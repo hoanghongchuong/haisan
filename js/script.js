@@ -54,21 +54,21 @@ $(document).ready(function($){
 	    }
 
 
-	    window.onscroll = function() {myFunction()};
+	 //    window.onscroll = function() {myFunction()};
 
-		var navbar = document.getElementById("menu_fix");
-		var sticky = navbar.offsetTop;
-		function myFunction() {
-		  if (window.pageYOffset > sticky) {
-		    navbar.classList.add("sticky");
-		    $('.logo-fix-scroll').css('display','block');
-		    // $('.menu').css('position','unset');
-		  } else {
-		    navbar.classList.remove("sticky");
-		    $('.logo-fix-scroll').css('display','none');
-		    // $('.menu').css('position','absolute');
-		  }
-		}
+		// var navbar = document.getElementById("menu_fix");
+		// var sticky = navbar.offsetTop;
+		// function myFunction() {
+		//   if (window.pageYOffset > sticky) {
+		//     navbar.classList.add("sticky");
+		//     $('.logo-fix-scroll').css('display','block');
+		//     // $('.menu').css('position','unset');
+		//   } else {
+		//     navbar.classList.remove("sticky");
+		//     $('.logo-fix-scroll').css('display','none');
+		//     // $('.menu').css('position','absolute');
+		//   }
+		// }
 
 	$('.slider-for').slick({
 	  	slidesToShow: 1,

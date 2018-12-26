@@ -23,16 +23,36 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
 </head>
-
 <body>
-	<header id="header" class="hidden-xs hidden-sm">
-        <div class="top-header">
+	<header id="header" class="header hidden-xs hidden-sm" style="background: url('images/banner.jpg'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="top-header">
+                    <div class="pull-right" style="padding-right: 50px;">
+                        <a href="" title=""><img src="images/vn.png"></a> &nbsp;
+                        <a href="" title=""><img src="images/en.png"></a>&nbsp;
+                        <a href="" title=""><img src="images/ch.png"></a>
+                    </div>
+                </div>
+                              
+            </div>
+        </div>
+        <div class="menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 logo">
-                        <img src="images/logo.png" class="">
+                    <div class="col-md-2">
+                        <a href="" title=""><img src="images/logo.png"></a>
                     </div>
-                    <div class="col-md-4 box-search">
+                    <div class="col-md-7">
+                        <ul class="ul_menu">
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Hải sản tươi sống</a></li>
+                            <li><a href="">Đồ khô</a></li>
+                            <li><a href="">Tin tức</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 box-search">
                         <div class="search-text" id="search_text">
                             <form action="" method="get" accept-charset="utf-8">
                                 <div class="form-group">
@@ -42,93 +62,43 @@
                             </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8"></div>
                     <div class="col-md-4">
-                        <p class=" box-phone"><i class="fa fa-phone">&nbsp;0987654321</i></p>
+                        <img src="images/tomca.png" style="width: 100%;">
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="menu-slider">
-            <div class="menu" id="menu_fix">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="images/logo_trang.png" class="logo-fix-scroll">
-                        </div>
-                        <div class="col-md-9">
-                            <ul class="navi">
-                                <li>
-                                    <a href="">Trang chủ</a>
-                                </li>
-                                <li>
-                                    <a href="">Giới thiệu</a>
-
-                                </li>                               
-                                <li>
-                                    <a href="">Hải sản tươi sống</a>
-                                    <ul class="vk-menu__child">
-                                        <li><a href="">Tôm</a></li>
-                                        <li><a href="">Cua</a></li>
-                                        <li><a href="">Cá</a></li>
-                                    </ul>                                    
-                                </li>
-                                <li>
-                                    <a href="">Đồ khô</a>
-                                    
-                                </li>
-                                <li>
-                                    <a href="">Tin tức</a>
-                                    
-                                </li>
-                                <li>
-                                    <a href="">Liên hệ</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider">
-                <div id="carousel-id" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-                        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-                        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item">
-                            <img src="images/banner.png">
-                        </div>
-                        <div class="item">
-                           <img src="images/banner.png">
-                           
-                        </div>
-                        <div class="item active">
-                            
-                           <img src="images/banner.png">
-                        </div>
-                    </div>
-                    <!-- <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
-                </div>
-            </div>
-        </div>
+        </div> 
+        
     </header><!-- /header -->
     <div class="header-mobile visible-xs visible-sm">
         <div class="img-logo-mobile col-xs-12">
-            <img src="images/logo1.png" class="">
+            <img src="images/logo.png" class="">
+
             <!-- <div class="col-xs-6 col-sm-6"><span><i class="fa fa-phone">&nbsp;0987654321</i></span></div> -->
         </div>
        
-        <div class="box-search col-xs-12">
-            <div class="search-text" id="search_text">
+        <div class="box-search box-search-mobile col-xs-12">
+            <div class="search-text col-xs-7" id="search_text">
                 <form action="" method="get" accept-charset="utf-8">
                     <div class="form-group">
-                        <input type="text" placeholder="Từ khóa tìm kiếm" class="input-search text" name="">
+                        <input type="text" placeholder="Từ khóa tìm kiếm" class="input-search form-control text" name="">
                         <input type="submit" class="btn-search" id="search_btn" name="">
                     </div>
                 </form>
+            </div>
+            <div class="top-header-mobile col-xs-5">
+                <div class="" style="">
+                    <a href="" title=""><img src="images/vn.png"></a> &nbsp;
+                    <a href="" title=""><img src="images/en.png"></a>&nbsp;
+                    <a href="" title=""><img src="images/ch.png"></a>
+                </div>
             </div>
         </div>
         <div class="vk-header__search">
@@ -142,437 +112,251 @@
                 <li><a href="#">Trang chủ</a></li>
                 <li>
                     <a href="#">Giới thiệu</a>
-                                      
+                    
                 </li>
-                <li>
-                    <a href="#">Hải sản tươi sống</a>
-                    <a href="#menu" data-toggle="collapse" class="_arrow-mobile"><i class="_icon fa fa-angle-down"></i></a>
-                    <ul class="collapse" id="menu">                        
-                        <li><a href="">Cua</a></li>                      
-                        <li><a href="">Tôm</a></li>                      
-                        <li><a href="">Cá</a></li>                      
-                    </ul>  
-                </li>
-                <li>
-                    <a href="#">Đồ khô</a>
-                    <a href="#menu1" data-toggle="collapse" class="_arrow-mobile"><i class="_icon fa fa-angle-down"></i></a>
-                    <ul class="collapse" id="menu1">                        
-                        <li><a href="">Cua khô</a></li>                      
-                        <li><a href="">Tôm khô</a></li>                      
-                        <li><a href="">Cá khô</a></li>                      
-                    </ul>
-                </li>
+                <li><a href="#">Hải sản tươi sống</a></li>
+                <li><a href="#">Đồ khô</a></li>
                 <li><a href="#">Tin tức</a></li>
-                <li><a href="#">Liên hệ</a></li>
+                
             </ul>
         </nav>
         
     </div>
-    <div class="slider slider-mobile visible-xs visible-sm">
-        <div id="carousel-id" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-                <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-                <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item">
-                    <img src="images/banner.png">
-                </div>
-                <div class="item">
-                   <img src="images/banner.png">
-                   
-                </div>
-                <div class="item active">
-                    
-                   <img src="images/banner.png">
-                </div>
-            </div>
-            <!-- <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
-        </div>
-    </div>
-	<div class="content-box">
+
+    <div class="content-home" style="background: url('images/bg.jpg'); background-size: cover;">
         <div class="container">
             <div class="row">
-                <div class="about_home">
+                <div class="about-home">
                     <div class="col-md-6">
-                        <div class="box-intro_home">
-                            <div class="title">
-                                <span class="name_company">Giới thiệu về chúng tôi</span>
-                                <p class="underline underlinex"></p>
-                            </div>
-                            
-                            <div class="short-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. 
-                            </div>
+                        <h4 class="title-home">Giới thiệu về chúng tôi</h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="box-img-intro">
-                            <img src="images/1.png" class="img-responsive">
-                           <!--  <img src="images/img_intro2.png" class="img2"> -->
-                        </div>
-                        <!-- <div class="visible-xs img2x"> <img src="images/1.png" class=""></div> -->
+                        <img src="images/gthieu.jpg" style="width: 100%;">
                     </div>
                 </div>
-            </div>            
-        </div>   
-    </div>
-    <div class="box-category">
-        <div class="container">
-            <div class="row">
-                <div class="cate_name_home">Tôm</div>
-                <p class="underlinex"></p>
-                <div class="list-item">
-                    <div class="col-md-4 col-xs-12 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4 col-xs-12 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4 col-xs-12 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="box-category">
-        <div class="container">
-            <div class="row">
-                <div class="cate_name_home">Cua</div>
-                <p class="underlinex"></p>
-                <div class="list-item">
-                    <div class="col-md-4 col-xs-6 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="box-category">
-        <div class="container">
-            <div class="row">
-                <div class="cate_name_home">Cá</div>
-                <p class="underlinex"></p>
-                <div class="list-item">
-                    <div class="col-md-4 col-xs-6 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">
-                        <div class="box-image">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4 col-xs-6 item-box-product-home">                        
-                        <div class="box-image flr">
-                            <a href="" title="" class="zoom"><img src="images/sp2.jpg"></a>
-                        </div>
-                        <div class="box-name flr">
-                            <a href="" title="">Tôm hùm loại 1</a>
-                            <div class="short-des-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="news-partner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-xs-12">
-                    
-                    <div class="feedback">
-                        <div class="cate_name_home">Phản hồi khách hàng</div>
-                        <p class="underlinex"></p>
-                        <div class="owl-carousel-feedback">
-                            <div class="item">
-                                <a data-slide-index="0" href="javascript">
-                                    <img src="images/sp2.jpg" />
-                                    <p class="name_feedback">Nguyễn Văn A</p>
-                                    <span class="content_feedback">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a data-slide-index="1" href="javascript">
-                                    <img src="images/sp2.jpg" />
-                                    <p class="name_feedback">Nguyễn Văn A</p>
-                                    <div class="content_feedback">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a data-slide-index="1" href="javascript">
-                                    <img src="images/sp2.jpg" />
-                                    <p class="name_feedback">Nguyễn Văn A</p>
-                                    <div class="content_feedback">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <div class="news_home">
-        <div class="container">
-            <div class="row">
-                <div class="cate_name_home">Tin tức</div>
-                <p class="underlinex"></p>
-                <div class="list-box-news-home">
-                    <div class="col-md-6 col-xs-12 mb20">
-                        <div class="col-md-6 col-xs-12">
-                            <a href="" title=""><img src="images/n1.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="name_news"><a href="" title="">Tin tức 1</a></div>
-                            <div class="news_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class="box-category-product">
+                    <div class="col-md-6">
+                        <h4 class="title-home"><a href="" title="">Tôm</a></h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</div>
-                            <p class="read-more"><a href="" title="">Xem thêm >></a></p>
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-12 mb20">
-                        <div class="col-md-6 col-xs-12">
-                            <a href="" title=""><img src="images/n2.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="name_news"><a href="" title="">Tin tức 1</a></div>
-                            <div class="news_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <div class="col-md-6">
+                        <img src="images/tom.png">
+                    </div>
+                </div>
+                <div class="box-category-product">
+                    <div class="col-md-6">
+                        
+                        <img src="images/cua.png">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="title-home"><a href="" title="">Cua</a></h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</div>
-                            <p class="read-more"><a href="" title="">Xem thêm >></a></p>
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-12 mb20">
-                        <div class="col-md-6 col-xs-12">
-                            <a href="" title=""><img src="images/n2.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="name_news"><a href="" title="">Tin tức 1</a></div>
-                            <div class="news_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </div>
+                <div class="box-category-product">
+                    <div class="col-md-6">
+                        <h4 class="title-home"><a href="" title="">Cá</a></h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</div>
-                            <p class="read-more"><a href="" title="">Xem thêm >></a></p>
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-12 mb20">
-                        <div class="col-md-6 col-xs-12">
-                            <a href="" title=""><img src="images/n2.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="name_news"><a href="" title="">Tin tức 1</a></div>
-                            <div class="news_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <div class="col-md-6">
+                        <img src="images/ca.png">
+                    </div>
+                </div>
+                <div class="box-category-product">
+                    <div class="col-md-6">
+                        
+                        <img src="images/muc.png">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="title-home"><a href="" title="">Mực</a></h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</div>
-                            <p class="read-more"><a href="" title="">Xem thêm >></a></p>
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
+                    </div>
+                </div>
+                <div class="box-category-product">
+                    <div class="col-md-6">
+                        <h4 class="title-home"><a href="" title="">Ốc</a></h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/oc.png">
+                    </div>
+                </div>
+                <div class="box-category-product">
+                    <div class="col-md-6">
+                        
+                        <img src="images/dokho.png">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="title-home"><a href="" title="">Đồ khô</a></h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="box-category-product">
+                    <div class="col-md-6">
+                        <h4 class="title-home"><a href="" title="">Thiết bị hồ hải sản</a></h4>
+                        <div class="short-des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/tbho.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="box-news-home">
+        <div class="container">
+            <div class="row">
+                <h3 class="title-news-home"><a href="" title="">Tin tức</a></h3>
+                <div class="col-md-6 col-xs-12 box_item_news">
+                    <div class="col-md-6">
+                        <a href="" title=""><img src="images/news1.jpg"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="name-news-home"><a href="" title="">Tin tức 1</a></h4>
+                        <div class="shot-des-news">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div>
+                        <p class="read-more"><a href="">Xem thêm >></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 box_item_news">
+                    <div class="col-md-6">
+                        <a href="" title=""><img src="images/news1.jpg"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="name-news-home"><a href="" title="">Tin tức 1</a></h4>
+                        <div class="shot-des-news">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div>
+                        <p class="read-more"><a href="">Xem thêm >></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 box_item_news">
+                    <div class="col-md-6">
+                        <a href="" title=""><img src="images/news1.jpg"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="name-news-home"><a href="" title="">Tin tức 1</a></h4>
+                        <div class="shot-des-news">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div>
+                        <p class="read-more"><a href="">Xem thêm >></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 box_item_news">
+                    <div class="col-md-6">
+                        <a href="" title=""><img src="images/news1.jpg"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="name-news-home"><a href="" title="">Tin tức 1</a></h4>
+                        <div class="shot-des-news">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div>
+                        <p class="read-more"><a href="">Xem thêm >></a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer style="background: url('images/bg_footer.png'); background-size: cover;">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-xs-12 left">
-                    <div class="img-footer">
-                        <img src="images/logo_trang.png">
-                    </div>
-                    <p class="address">Address: b14, văn phòng Thừa Phát Lại, Vạn Phúc, Hà Đông.</p>
-                    <p>Hotline: 0987654321</p>
+                <div class="col-sm-4 left">
+                    <p><a href="" title=""><img src="images/logo_footer.png"></a></p>
+                    <p>Địa chỉ: Vạn Phúc, Hà Đông, Hà Nội</p>
                     <p>Email: abc@gmail.com</p>
-                    <p class="social">
-                        <a href="" title=""><span class="fa fa-facebook"></span></a>
-                        <a href="" title=""><span class="fa fa-youtube"></span></a>
-                        <a href="" title=""><span class="fa fa-twitter"></span></a>
+                    <p>
+                        <a href="" title=""><i class="fa fa-facebook"></i></a>&nbsp;
+                        <a href="" title=""><i class="fa fa-twitter"></i></a>&nbsp;
+                        <a href="" title=""><i class="fa fa-google"></i></a>
                     </p>
                 </div>
-                <div class="col-md-5 col-xs-12">
-                    <div class="title-contact">Liên hệ</div>
-                    <!-- <p class="underline_footer" style="background: url('./images/i_deco.png'); width: 180px;height: 25px;display: block;"></p> -->
-                    <div class="form-contact form-group">
-                        <form action="" method="post" accept-charset="utf-8">
-                            
-                            <input type="text" name="name" value="Name" class="form-control" placeholder="">
-                            <input type="text" name="email" value="Email" class="form-control" placeholder="">
-                            <input type="text" name="phone" value="Phone" class="form-control" placeholder="">
-                            <textarea name="content" class="form-control" placeholder="Message"></textarea>
-                            <button type="submit" class="btn-contact">Gửi</button>
-                        </form>
+                <div class="col-sm-4">
+                    <h4 class="title-home">Liên hệ</h4>
+                    <div class="box-form form-group">
+                        <input type="text" name="" value="" class="form-control" placeholder="Họ tên">
+                        <input type="text" name="" value="" class="form-control" placeholder="Số điện thoại">
+                        <input type="text" name="" value="" class="form-control" placeholder="Email">
+                        <textarea name="content" class="form-control" placeholder="Nội dung"></textarea>
+                        <input type="button" name="" class="btn-send" value="Gửi" placeholder="">
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-12">
-                    <div class="title-contact">Fanpage</div>
-                    <p></p>
+                <div class="col-sm-4">
+                    <h4 class="title-home">Fanpage</h4>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="bottom-footer">
-        <p>@Thiết kế bởi Hungthinhads.com</p>
-    </div>
-
-    <div class="hot-line-scroll" style="background: url('images/img_hotline.png') center">
-        <a href="tel:0987654321" title="">0987654321</a>
-    </div>
 </body>
 
 </html>
