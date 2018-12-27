@@ -1,5 +1,7 @@
 @media (max-width: 767px){
-	
+	.slider-for, .slider-nav{
+		width: 100%;
+	}
 }
 @media (min-width: 768px) {
 	

@@ -47,11 +47,11 @@ $(document).ready(function($){
 		    }
 		});
 
-		if($('[data-fancybox="video"]').length) {
-	        $('[data-fancybox="video"]').fancybox({
-	            type: 'iframe'
-	        });
-	    }
+		// if($('[data-fancybox="video"]').length) {
+	 //        $('[data-fancybox="video"]').fancybox({
+	 //            type: 'iframe'
+	 //        });
+	 //    }
 
 
 	 //    window.onscroll = function() {myFunction()};
@@ -70,21 +70,44 @@ $(document).ready(function($){
 		//   }
 		// }
 
+	
 	$('.slider-for').slick({
-	  	slidesToShow: 1,
-	  	slidesToScroll: 1,
-	  	arrows: false,
-	  	fade: true,
-	  	asNavFor: '.slider-nav'
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  asNavFor: '.slider-nav',
+		 autoplay: true
 	});
 	$('.slider-nav').slick({
-	  	slidesToShow: 3,
-	  	slidesToScroll: 1,
-	  	asNavFor: '.slider-for',
-	  	dots: true,
-	  	centerMode: true,
-	  	focusOnSelect: true
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: false,
+	  centerMode: true,
+	  focusOnSelect: true,
+	  responsive: [{
+ 			breakpoint: 1024,
+ 			settings: {
+ 				slidesToShow: 5,
+ 				slidesToScroll: 5,
+ 			}
+ 		}, {
+ 			breakpoint: 640,
+ 			settings: {
+ 				slidesToShow: 4,
+ 				slidesToScroll: 4,
+			}
+ 		}, {
+ 			breakpoint: 420,
+ 			settings: {
+ 				slidesToShow: 3,
+ 				slidesToScroll: 3,
+		}
+ 		}]
+
 	});
+			
 });
 
 var MobileMenu = function () {
