@@ -1,0 +1,33 @@
+@media (max-width: 767px){
+	.slider-for, .slider-nav{
+		width: 100%;
+	}
+	.ul_menu li a {
+	    color: #fff;
+	    font-family: MyBold;
+	    font-size: 18px;
+	    margin-right: 20px;
+	}
+	#search_text{
+		width: 350px;
+	}
+	.box-search .text{
+		width: 300px;
+	}
+}
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 768px) and (max-width: 999px){
+	
+	
+}
+@media (min-width: 1000px) {
+	.content-wraper{
+		padding: 15px 30px;
+	}
+	
+}
+@media (min-width: 1200px){
+	
+}
