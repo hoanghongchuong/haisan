@@ -17,36 +17,7 @@ use App\ChiNhanh;
 class IndexController extends Controller {
 	protected $setting = NULL;
 
-	public $sortType = [
-		'price-ascending' => [
-			'text' => 'Giá: Tăng dần',
-			'order' => ['price', 'ASC']
-		],
-		'price-descending' => [
-			'text' => 'Giá: Giảm dần',
-			'order' => ['price', 'DESC']
-		],
-		// 'title-ascending' => [
-		// 	'text' => 'Tên: A-Z',
-		// 	'order' => ['name', 'ASC']
-		// ],
-		// 'title-descending' => [
-		// 	'text' => 'Tên: Z-A',
-		// 	'order' => ['name', 'DESC']
-		// ],
-		// 'created-ascending' => [
-		// 	'text' => 'Cũ nhất',
-		// 	'order' => ['created_at', 'ASC']
-		// ],
-		// 'created-descending' => [
-		// 	'text' => 'Mới nhất',
-		// 	'order' => ['created_at', 'DESC']
-		// ],
-		// 'best-selling' => [
-		// 	'text' => 'Bán chạy nhất',
-		// 	'order' => ['noibat', 'ASC']
-		// ]
-	];
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Welcome Controller
@@ -91,9 +62,10 @@ class IndexController extends Controller {
 	public function index()
 	{
 		
-		$news = DB::table('news')->where('status',1)->where('noibat',1)->where('com','tin-tuc')->take(2)->orderBy('id','desc')->get();
+		$news = DB::table('news')->where('status',1)->where('com','tin-tuc')->take(4)->orderBy('id','desc')->get();
 		$products = DB::table('products')->where('status',1)->take(20)->orderBy('id','desc')->get();
-		$categories_home = DB::table('product_categories')->where('status',1)->where('noibat',1)->take(3)->orderBy('id','desc')->get();
+		$categories_home = DB::table('product_categories')->where('status',1)->where('com','san-pham')
+		->where('noibat',1)->orderBy('stt','asc')->get();
 		$feedbacks = DB::table('feedback')->get();
 		$partners = DB::table('partner')->get();
 		$setting =DB::table('setting')->select()->where('id',1)->get()->first();
@@ -273,7 +245,9 @@ class IndexController extends Controller {
 		$keyword = "Tìm kiếm: ".$search;
 		$description = "Tìm kiếm: ".$search;
 		$img_share = '';		
-		$data = DB::table('products')->where('name', 'LIKE', '%' . $search . '%')
+		$data = DB::table('products')
+		->where('com','san-pham')
+		->where('name', 'LIKE', '%' . $search . '%')
 		->where('status',1)
 		->orderBy('id','DESC')->get();
 		// dd($data);

@@ -16,16 +16,12 @@
             </div>
         </div>
     </nav>
-    <div class="content-box-contact">
+    <div class="content-box-contact" style="margin-bottom: 30px;">
         <div class="container">
             <div class="row info-company">
                 <div class="col-sm-4">
                     <h1 class="title-contact">Liên Hệ</h1>
-                    <div class="name_company">
-                        <span class="_icon"><img src="{{asset('public/images/map-i2.png')}}" alt=""></span> 
-                        <span>Tranh sơn dầu bạch vân</span>
-                    </div>
-
+                    
                     <p><span class="fwb">Địa chỉ:</span> {{$setting->address}}</p>
                     <p><span class="fwb">Số điện thoại:</span> {{$setting->phone}}</p>
                     <p><span class="fwb">Email:</span> {{$setting->email}}</p>
@@ -57,7 +53,7 @@
                                     <label for="">Nội dung</label>
                                     <textarea name="content" rows="5" required="" class="form-control" placeholder="Nội dung"></textarea>
                                 </div>
-                                <div class="text-md-right btn-gui col-md-12">
+                                <div class="text-md-right btn-gui col-md-12" style="margin-top: 10px;">
                                     <button type="submit" class="btn bold more-btn btn-primary">GỬI</button>
                                 </div>
                         </div>
@@ -66,11 +62,11 @@
             </div>
 
         </div>
-        <div class="map-box">
+        <!-- <div class="map-box">
             <div class="container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.8382755930447!2d105.83615366451174!3d20.976099315488543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac5a3a4a0d25%3A0x647fe16b8480d2e2!2zMTQgUC4gTmd1eeG7hW4gQ-G6o25oIEThu4ssIMSQ4bqhaSBLaW0sIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1540785721770" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 @endsection

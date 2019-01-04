@@ -345,3 +345,13 @@ footer .left p a{
 	padding: 10px 20px;
 	color: #fff;
 }
+.shot-des-news{
+	overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 6; /*số dòng muốn hiện */
+   font-size: 14px;          /*cỡ chữ, đơn vị px */
+   line-height: 1.43;        /* khoảng cách giữa các dòng, đơn vị em*/
+   max-height: 120.12px;
+}

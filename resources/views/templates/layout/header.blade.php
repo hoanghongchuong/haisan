@@ -27,7 +27,6 @@
                         <li><a href="{{url('gioi-thieu')}}">Giới thiệu</a></li>
                         @if(count($categories) > 0)
                         @foreach($categories as $category)
-
                         <li class="submenux">
                             <a href="{{url('san-pham/'.$category->alias)}}">{{$category->name}}</a>
                             <?php $cateChilds = DB::table('product_categories')->where('parent_id', $category->id)->where('status',1)->get(); ?>
@@ -81,9 +80,9 @@
        
         <div class="box-search box-search-mobile">
             <div class="search-text col-xs-12" id="search_text">
-                <form action="" method="get" accept-charset="utf-8">
+                <form action="{{route('search')}}" method="get" accept-charset="utf-8">
                     <div class="form-group">
-                        <input type="text" placeholder="Từ khóa tìm kiếm" class="input-search form-control text" name="">
+                        <input type="text" placeholder="Từ khóa tìm kiếm" class="input-search form-control text" name="txtSearch">
                         <input type="submit" class="btn-search" id="search_btn" name="">
                     </div>
                 </form>
@@ -106,23 +105,26 @@
                 <a href="{{url('gioi-thieu')}}">Giới thiệu</a>
                 
             </li>
-            <li>
-                <a href="#">Hải sản tươi sống</a>
-                <a href="#menu1" data-toggle="collapse" class="_arrow-mobile"><i class="_icon fa fa-angle-down"></i></a>                    
-                    <ul class="collapse" id="menu1">                                                
-                        <li>
-                            <a href="">Hải sản 1</a>
-                        </li>
-                        <li>
-                            <a href="">Hải sản 2</a>
-                        </li>
-                        <li>
-                            <a href="">Hải sản 3</a>
-                        </li>
-                    </ul>
-                   
-            </li>
-            <li><a href="#">Đồ khô</a></li>
+            @if(count($categories) > 0)
+                @foreach($categories as $k=>$category)
+                <li>
+                    <a href="{{url('san-pham/'.$category->alias)}}">{{$category->name}}</a>
+                    <a href="#menu{{$k}}" data-toggle="collapse" class="_arrow-mobile">
+                        <i class="_icon fa fa-angle-down"></i>
+                    </a>
+                    <?php $cateChilds = DB::table('product_categories')->where('parent_id', $category->id)->where('status',1)->get(); ?>
+                        @if(count($cateChilds) > 0)                    
+                        <ul class="collapse" id="menu{{$k}}">   
+                            @foreach($cateChilds as $child)                                            
+                            <li>
+                                <a href="{{url('san-pham/'.$child->alias)}}">{{$child->name}}</a>
+                            </li>
+                            @endforeach
+                        </ul>
+                        @endif
+                </li>
+                @endforeach
+            @endif
             <li><a href="{{url('tin-tuc')}}">Tin tức</a></li>
             
         </ul>
